@@ -1,0 +1,160 @@
+header {
+    display: flex;
+   justify-content:space-between;
+   align-items: center;
+   background-color:  rgba(2, 2, 2, 0.409);
+   height: 160px;
+   }
+   .Logo {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-inline-end:   10px;
+      margin-top: 10px;
+  }
+body {
+   font-family: Arial, sans-serif;
+   color :#ffff;
+   background-image: url(assets/Page_vierge.png);
+   background-size: cover;
+   margin: 0px;
+   padding: 0px;
+  }  
+  .title { 
+    color: #C89116;
+    font-family:cursive;
+    font-size:large;
+    margin-left: 10px;
+}
+.panier {
+  margin-right: 10px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size:16px;
+    gap: 100px;
+}
+ul :hover {
+    background-color: black;
+}
+li a {
+     text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+p {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: black;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    color:#fcc317;
+    font-size: x-large;
+}
+.price {
+    font-weight: bold;
+    }
+.Atelier_cuisine {
+    display: flex;
+    justify-content:center;
+    gap: 16px;
+    margin: 16px;
+}
+.Atelier_cuisine1,
+.Atelier_cuisine2 {
+    margin:   16px;
+}
+    .footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size:smaller;
+    background-color: black;
+    height: 50px;
+}
+.footer_img {
+  display: flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+@media screen and (max-width: 932px) {
+  header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: auto;
+  }
+  
+  .title {
+    font-size:12px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }
+  li a {
+    font-size: 10px;
+  } 
+    
+  .panier img {
+        width: 40px;
+        height: 40px;
+        margin: 2px;
+      }
+      .Atelier_cuisine {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 16px;
+        margin: 20px;
+      }
+      .Atelier_cuisine img {
+        width: 370px;
+        height: 370px;
+      }
+      h2,
+      h3 {
+        text-align: center;
+        font-size:medium;
+      }
+    .bouton {
+        text-align: center;
+        font-size: small;
+    }
+      .price {
+        text-align: center;
+        font-size:x-small;
+      }
+      P {
+        font-size:small;
+        margin: 8px;
+      }
+
+      .footer {
+        display: flex;
+              flex-direction: column;
+              font-size:16px;
+              gap: 0;
+              height: 100%;
+            padding: 10px;
+            }
+        
+        .footer_img {
+          display: flex;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          gap: 15px;
+          }
+        }
