@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miel en Famille - Réservation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo Miel" width="100" />
+        <h1 class="titre"> Miel en Famille</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="ateliers.html">ATELIERS</a></li>
+          <li><a href="contactez_nous.html">CONTACTEZ-NOUS</a></li>
+          <li><a href="achat_de_billet.html">ACHAT DE BILLET</a></li>
+        </ul>
+      </nav>
+      <div class="panier">
+        <img src="assets/panier.png" width="30" />
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="left-container">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" placeholder="JJ/MM/AAAA" />
+          </div>
+          <div class="form-group">
+            <label for="nbAdulte">Adulte</label>
+            <input
+              type="number"
+              name="nbAdulte"
+              id="nbAdulte"
+              min="0"
+              oninput="calculerPrix()"
+            /><br />
+          </div>
+          <div class="form-group">
+            <label for="atelier">Atelier</label>
+            <select id="activity" onchange="calculerPrix()">
+              <option value="">-- Sélectionnez un atelier --</option>
+              <option value="12">
+                Atelier des bougies à la cire d'abeille
+              </option>
+              <option value="20">Atelier des savons à la cire d'abeille</option>
+              <option value="15">Atelier cuisine avec du miel</option>
+              <option value="12">Atelier visite de la ruche</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="right-container">
+          <div class="form-group">
+            <label for="heure">Heure</label>
+            <input type="time" placeholder="HH:MM" />
+          </div>
+          <div class="form-group">
+            <label for="enfants">Enfants</label>
+            <input
+              type="number"
+              name="nbEnfant"
+              id="nbEnfant"
+              min="0"
+              oninput="calculerPrix()"
+            />
+          </div>
+          <div class="form-group">
+            <label for="prix">Prix</label>
+            <input type="text" id="prix" readonly value="0€" />
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Réserver</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="reseaux">
+        <a href="https://www.facebook.com/"><img src="assets/facebook.png" alt="Facebook" width="30" /></a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
+      </div>
+        <p>mielenfamille@gmail.com</p>
+        <p>0657321988</p>
+        <p>25 Rue parc des jolies fleurs</p>
+        <p>© 2024 Miel en Famille</p>
+      
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
