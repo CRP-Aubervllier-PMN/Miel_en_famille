@@ -21,7 +21,7 @@
         </ul>
       </nav>
       <div class="panier">
-        <img src="assets/panier.png" width="30" />
+        <a href="achat_de_billet.html"><img src="assets/panier.png" width="30" /></a>
       </div>
     </header>
 
@@ -79,15 +79,21 @@
       </div>
 
       <div class="button-container">
-        <button type="submit">Réserver</button>
-      </div>
-    </main>
-
+        <button id="envoyerButton" type="submit">Confirmer</button>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <a href="achat_de_billet.html">Annuler</a>
+            <p>Confirmez-vous votre réservation ?</p>
+            <button id="fermerPopup">Valider</button>
+        </div>
+    </div>
+</main>
     <footer>
       <div class="footer">
         <div class="reseaux">
-        <a href="https://www.facebook.com/"><img src="assets/facebook.png" alt="Facebook" width="30" /></a>
-        <a href="https://www.instagram.com/"><img src="assets/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="https://www.facebook.com/"><img src="assets/FB.png" alt="Facebook" width="30" /></a>
+        <a href="https://www.instagram.com/"><img src="assets/insta.png" alt="Instagram" width="30" /></a>
       </div>
         <p>mielenfamille@gmail.com</p>
         <p>0657321988</p>
@@ -96,5 +102,5 @@
       
     </footer>
   </body>
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </html>
