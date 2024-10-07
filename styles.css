@@ -1,0 +1,188 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(2, 2, 2, 0.435);
+  height: 200px;
+  margin-bottom: 2em;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/Fond.png');
+    height: 200px;
+    background-size: cover;
+    color: white;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    column-gap: 25em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    color: #c89116;
+    font-family: cursive;
+    font-size: xx-small;
+}
+
+nav ul :hover {
+background-color: rgb(0, 0, 0);
+}
+
+.Miel1{
+    color: #ffffff;
+}
+
+.Miel2 {
+    color: #ffffff;
+}
+
+.Presentation {
+    font-size: 25px;
+    text-align: center;
+}
+
+.RS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .RS img {
+    width: 40px;
+  }
+
+footer{
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    font-size: 14px;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+  }
+
+@media only screen and (min-width: 390px) and (max-width: 932px) {
+
+/* Format que j'ai choisie (iPhone 14 Pro Max) */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: space-between;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 2em;
+  }
+
+.Logo {
+    margin-top: 10%;
+}
+
+.Presentation {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.table {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.Miel1, .Miel2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 81%;
+  gap: 10px;
+}
+
+nav a {
+  font-size: 1.1em;
+}
+
+.RS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .RS img {
+    width: 40px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    width: 500px;
+    gap: 5px;
+    height: 110%;
+    padding-bottom: 50px;
+  }
+}
