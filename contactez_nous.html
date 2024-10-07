@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miel en Famille - Contactez-nous</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/Logo-BEE.png" alt="Logo Miel" width="100" />
+        <h1 class="titre"> Miel en Famille</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="ateliers.html">ATELIERS</a></li>
+          <li><a href="contactez_nous.html">CONTACTEZ-NOUS</a></li>
+          <li><a href="achat_de_billet.html">ACHAT DE BILLET</a></li>
+        </ul>
+      </nav>
+      <div class="panier">
+        <a href="achat_de_billet.html"><img src="assets/panier.png" width="30" /></a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <div class="left-container">
+            <div class="form-group">
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="contact">Téléphone :</label>
+              <input type="text" id="contact" placeholder="Votre téléphone" required />
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="form-group">
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email :</label>
+              <input type="email" id="email" placeholder="Votre email" required />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="message-group">
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Votre message ici" required ></textarea>
+        </div>
+        <div class="button-container">
+            <button id="envoyerButton" type="submit">Envoyer</button>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <a class="img_pop" href="contactez_nous.html"> <img src="assets/croix.svg"></a>
+                <p>Votre message a été envoyé !</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="reseaux">
+        <a href="https://www.facebook.com/"><img src="assets/facebook.png" class="reseaux" alt="Facebook" width="30" /></a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram.png" class="reseaux" alt="Instagram" width="30" /></a>
+      </div>
+        <p>mielenfamille@gmail.com</p>
+        <p>0657321988</p>
+        <p>25 Rue parc des jolies fleurs</p>
+        <p>© 2024 Miel en Famille</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
