@@ -363,6 +363,10 @@ button:hover {
 #fermerPopup {
   margin-top: 10px;
 }
+.img_pop {
+  display: flex;
+  align-items: flex-start;
+}
 @media only screen and (max-width: 732px) {
   header {
     flex-direction: row;
