@@ -1,12 +1,12 @@
-function calculerPrix() {
-  const activite = document.getElementById("activity").value;
+// function calculerPrix() {
+//   const activite = document.getElementById("activity").value;
 
-  const nbAdulte = document.getElementById("nbAdulte").value;
-  const nbEnfant = document.getElementById("nbEnfant").value;
+//   const nbAdulte = document.getElementById("nbAdulte").value;
+//   const nbEnfant = document.getElementById("nbEnfant").value;
 
-  const prixTotal = nbAdulte * activite + nbEnfant * (activite - 3);
+//   const prixTotal = nbAdulte * activite + nbEnfant * (activite - 3);
 
-  document.getElementById("prix").value = prixTotal + "€";
-}
+//   document.getElementById("prix").value = prixTotal + "€";
+// }
 
-console.log("slt");
+// console.log("slt");
